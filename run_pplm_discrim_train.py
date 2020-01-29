@@ -237,6 +237,7 @@ def train_discriminator(
     start = time.time()
 
     if dataset == "SST":
+        #输出类别控制
         idx2class = ["positive", "negative", "very positive", "very negative",
                      "neutral"]
         class2idx = {c: i for i, c in enumerate(idx2class)}
